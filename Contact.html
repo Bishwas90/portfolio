@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Contact.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Mausam Portofololia</div>
+            <div class="right"></div>
+            <ul>
+                <li><a href="Home.html">Home</a></li> 
+                    <li><a href="Project.html">Projects</a></li> 
+                    <li><a href="Contact.html">Contact us</a></li> 
+                    <li><a href="About us.html">About us</a></li> 
+                    <li><a href="Services.html">Services</a></li>
+
+            </ul>
+        </nav>
+    
+    </header>
+    <div class="text-box">
+        <h1>Contact Us</h1>   
+    </div>
+
+    <div class="contactus">
+        <div class="title"></div>
+        <div class="box">
+
+            <!-- Form -->
+            <div class="contact form">
+                <h3>How can we help you</h3>
+                <form name="messageform" onsubmit="validateForm()">
+                    <div class="formbox">
+                        <div class="row50">
+                            <div class="inputbox">
+                                <span>First Name</span>
+                                <input type="text" name="FirstName" placeholder="Mausam Kumari">
+                            </div>
+
+                            <div class="inputbox">
+                                <span>Last Name</span>
+                                <input type="text" name="LastName" placeholder="Bishwas">
+                            </div>
+                        </div>
+
+                        <div class="row50">
+                            <div class="inputbox">
+                                <span>Email</span>
+                                <input type="text" name="Email" placeholder="bishwasmausam2060@gmail.com">
+                            </div>
+
+                            <div class="inputbox">
+                                <span>Phone</span>
+                                <input type="number" name="Phone" placeholder="+977-9852024658">
+                            </div>
+                        </div>
+
+                        <div class="row100">
+                            <div class="inputbox">
+                                <span>Comment</span>
+                                <textarea name="Comment" placeholder="Leave your comment here"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row100">
+                            <div class="inputbox">
+                                <input type="submit" value="Submit">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            <script>
+                function validateForm() {
+                    var FirstName = document.forms["messageform"]["FirstName"].value;
+                    var LastName = document.forms["messageform"]["LastName"].value;
+                    var Email = document.forms["messageform"]["Email"].value;
+                    var Phone = document.forms["messageform"]["Phone"].value;
+                    
+                    var namePattern = /^[A-Za-z]+$/;  // Regular expression to match only letters
+            
+                    if (FirstName === "" || LastName === "" || Email === "" || Phone === "") {
+                        alert("Please fill the form in the correct order");
+                        return false;
+                    } else if (!namePattern.test(FirstName)) {
+                        alert("First name should contain only letters");
+                        return false;
+                    } else if (!namePattern.test(LastName)) {
+                        alert("Last name should contain only letters");
+                        return false;
+                    } else if (!Email.includes("@")) {
+                        alert("Please enter a valid email address");
+                        return false;
+                    } else {
+                        alert("Thank you! Your message has been recorded successfully");
+                        return true;
+                    }
+                }
+            </script>
+            
+            
+
+            <!-- Info box -->
+            <div class="contact info">
+                <h3>Contact Info</h3>
+                <div class="infobox">
+                    <div>
+                        <span><ion-icon name="location"></ion-icon></span>
+                        <p>YouthIT, Dulari <br> Nepal</p> 
+                    </div>
+                    <div>
+                        <span><ion-icon name="mail"></ion-icon></span>
+                        <a href="bishwasmausam2060@gmail.com">bishwasmausam2060@gmail.com</a>
+                    </div>
+                    <div>
+                        <span><ion-icon name="call"></ion-icon></span>
+                        <a href="tel:+977-9852024658">+977-9852024658</a>
+                    </div>
+
+                    <!-- Social Media Links -->
+                    <ul class="sci">
+                        <li><a href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        <li><a href="https://www.google.com/"><ion-icon name="logo-google"></ion-icon></a></li>
+                        <li><a href="https://web.whatsapp.com/"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Map -->
+            <div class="contact map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3565.885702418877!2d87.29571107421066!3d26.652141771242132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef6d4476a0ab3b%3A0x401ae567ff9b1f7e!2sYOUTH%20IT!5e0!3m2!1sen!2snp!4v1719391226935!5m2!1sen!2snp" width="800" height="600" style="border:0;"
+                 allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>           
+                 </div>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</section>
+</body>
+</html>
+
+    
+</body>
+</html>

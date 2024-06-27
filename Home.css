@@ -1,0 +1,182 @@
+*{
+    margin:0;
+    padding: 0;
+
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: lightgrey;
+}
+nav{
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+    height: 20px;
+    padding: 25px;
+    background:lightslategray;
+    /* background:(9, 109, 101); */
+
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 13px;
+    
+}
+
+nav ul li a:hover{
+    color:rgb(248, 93, 235);
+    transform: scale(1.1);
+    
+}
+nav ul li a{
+    list-style: none;
+    margin: 0 13px;
+    text-decoration: none;
+    color: white;
+
+
+.main hr{
+    border: 0;
+    background: #9c97f1;
+    height: 1.2px;
+    margin: 40px 84px;
+}   
+}
+.left{
+    font-size: 1.5rem;
+    color: white;
+}
+.firstSection{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 12px 0;
+}
+.firstSection div{
+    width: 30%;
+} 
+.leftSection{
+    font-size: 1.8rem;
+
+}
+.leftSection .btn {
+    padding: 12px;
+    background: rgb(47, 47, 94);
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    width: 288px; /* Adjust the width as needed */
+
+    
+}
+
+.leftSection .buttons {
+    display: flex;
+    justify-content: flex-start; 
+    gap: 12px; 
+    padding: 50px 0;
+    width: 300px;
+    top: -300px;
+
+}
+
+.rightSection img{
+    width: 80%;
+    margin: 50px 0 ;
+    
+}
+.purple{
+    color: blueviolet;
+}
+#element{
+    color:peru;
+}
+.secondSection{
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+}
+.secondSection h1{
+    font-size: 1.9rem;
+
+}
+
+.text-gray{
+    color:grey ;
+    
+}
+.secondSection .box{
+    background: white;
+    width: 80vw;
+    height: 2px;
+    margin: 30px 0;
+    display: flex;
+}
+.secondSection .vertical{
+    height: 93px;
+    width: 1px;
+    background-color: white;
+    margin: 0 120px;
+}
+.image-top{
+    width: 23px;
+    position: relative;
+    top: -20px;
+    left: -9px;
+}
+.vertical-title{
+    position: relative;
+    top: 75px;
+    width: 150px;
+    font-size: 12px;
+    
+
+}
+.vertical-desc{
+    position: relative;
+    top: 86px;
+    color:grey;
+    width: 150px;
+    font-size: 9px;
+
+}
+footer{
+    background-color:grey;
+    height: 233px;
+
+}
+.footer{
+    display: flex;
+    padding: 23px 122px;
+    justify-content: space-evenly;
+    color: white;
+    
+
+
+}
+.footer ul{
+    list-style: none;
+}
+.footer >div{
+    width: 223px;
+}
+footer .footer-rights{
+    text-align: center;
+    color:brown;
+    padding: 12px;
+
+}
+.media-button{
+    display: flex;
+    font-size: 20px;
+    margin-left: 600px;
+
+
+}
